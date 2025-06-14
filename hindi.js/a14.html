@@ -1,0 +1,31 @@
+// Object demonstrating various methods
+var demoObject = {
+    // Method using Math object
+    mathMethod: function() {
+        return Math.random(); // Returns a random number between 0 and 1
+    },
+
+    // Method using String object
+    stringMethod: function() {
+        var str = "Hello, world!";
+        return str.toUpperCase(); // Converts string to uppercase
+    },
+
+    // Method using Array object
+    arrayMethod: function() {
+        var arr = [1, 2, 3, 4, 5];
+        return arr.reverse(); // Reverses the elements of the array
+    },
+
+    // Method using Date object
+    dateMethod: function() {
+        var currentDate = new Date();
+        return currentDate.toDateString(); // Returns the current date in a readable format
+    }
+};
+
+// Testing the methods
+console.log("Random Number:", demoObject.mathMethod());
+console.log("Uppercase String:", demoObject.stringMethod());
+console.log("Reversed Array:", demoObject.arrayMethod());
+console.log("Current Date:", demoObject.dateMethod());

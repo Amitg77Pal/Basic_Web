@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Objects</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.arc(400, 250, 80, 0, 2 * Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+            ctx.closePath();
+
+            // Draw "Hello, Canvas!" text
+            ctx.font = '20px Arial';
+            ctx.fillStyle = 'black';
+            ctx.textAlign = 'center';
+            ctx.fillText('Hello, Canvas!', 390, 360);
+
+            ctx.beginPath();
+            ctx.moveTo(50, 300);
+            ctx.lineTo(200, 450);
+            ctx.strokeStyle = 'green';
+            ctx.lineWidth = 6;
+            ctx.stroke();
+            ctx.closePath();
+
+            // Draw a rectangle
+            ctx.beginPath();
+            ctx.rect(100, 50, 150, 150);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+            ctx.closePath();
+
+        };
+    </script>
+</body>
+</html>

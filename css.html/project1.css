@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border:border-box;/*border-box means jeetni bhi padding( Padding is the space between the border and the content)
+     element ko mile means jitna bhi border-size element ko (jeetni hamne height and width set ki hai usi ke ander 
+      border area count ho)
+     mile oo size uski height and width ke under count hogi|| agar simple border ki bat kre to kisi bhi element ke
+      bahar vale area me count hota hai*/
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;/*elements ko equally space me divide krayege navbar me aur elemen
+    ts ko right me add karege to pahle ke sare elements left ki tarf shift ho jayege*/
+} 
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size:cover;/*The cover value, as the name implies, ensures that the picture is scaled to fill the 
+    full container, leaving no empty space, while maintaining its ratio*/
+    height:50px;
+    width:100%;
+}
+
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:1.5px solid white;
+}
+/**box2**/
+.add-first{
+    color:#cccccc;
+    font-size:1rem;/*to increase or decrease the size of element*/
+    margin-left:15px;
+
+}
+.add-second{
+    font-size:1rem;
+    margin-left:3px;
+
+}
+/* kisi bhi cheejh ko same line lana ho to --> agar bahut sari cheejhe ek single div(container) ke ander hai to to us 
+container ko bana do flex(.class_name{
+    display:flex;}
+    ) */
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+/* box3 */
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;/*option ke bich me equally space ho*/
+    background-color: pink;
+    width:620px;
+    height:40px;
+    border-radius: 4px;/*sharp corner ko curve karne ke liye -->charo corner se curve ho jayega dono sides ke*/
+}
+.search-select{
+    background-color: skyblue;
+    width:50px;
+    text-align:center;
+    /* border-radius:4px; */
+    border-top-left-radius: 4px;/*left side ke-upper vala corner sharp hoga*/
+    border-bottom-left-radius: 4px;/*left side ke-bottom vala corner sharp hoga*/
+    border:none;
+}
+
+.search-input{
+    /* width:500px; */
+    width:100%;/*means here,ham search ka size jitna ho skta hai utna badha dege aur iske bad ham others ke 
+    size ko adjust krege*/
+    font-size:1rem;/*Search Amazon ka size increase kae dege*/
+    border:none;
+}
+.search-icon{
+    width:45px;
+    display: flex;/*parent container ko flex de dege*/ 
+    justify-content: center;/*horizentally center me aa jya hai*/
+    align-items:center;/*vertically center me aa jya hai*/
+    font-size:1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    color:#0f1111;/*search icon symbol ka clor set kiye hai*/  
+}
+.nav-search:hover{/*search-box ke charo tarf colorfull bondary aani chahiye hovar karne per*/
+    border:2px solid orange;
+}
+
+/* box4 */
+span{
+    font-size: 0.7rem;
+}
+.nev-second{
+    font-size:0.85rem;
+    font-weight: 700;/*thda darker hoga bold hoga*/
+}
+
+/*box6 */
+.nav-cart i{/*here,we are use combination of selectors means ham styling apply kar rhe hai jo 
+    usi icon per apply ho jo nav-cart class ke ander ho*/
+    font-size: 30px;
+
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight:700;
+}
+/* panel */
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display:flex;/*display:flex set karege to sara containt ek single-row me aa jayega*/
+    color:white;
+    align-items: center;/*vertically aligned*/
+    justify-content:space-evenly;/*Horigentally aligned*/
+    
+}
+.panel-ops p{
+    display:inline;
+    margin-left:10px;
+}
+.panel-ops {
+    width:70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size:0.9rem;
+    font-weight:700;
+}
+/* hero section */
+.hero-section{
+    background-image: url("Amazon_Destop.jpg");
+    height:400px;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color:black;
+    display:flex;
+    justify-content: center;
+    font-size:0.85rem;
+    width:80%;
+    margin-bottom:25px;
+    /* bottom:25px;/*image pahle khi bhi rhe ab bttom se 25p per placed hoga || bottom abhi tatic hai to ee apply
+    karne ke liye position:relative dena hoga*
+    position:relative; */
+}
+.hero-msg a{
+    color:#007185;/*anchar tag ke under jo link hai uska color change hojayega*/
+}
+
+/* containt section starts from here  */
+.box{
+    border:2px solid black;
+    height:400px;
+    width:23%;/*ham width child class me hi kyu likhege parent class me kyu nhi(.shop-section)??????*/ 
+    background-color:white;
+    padding : 20px 0px 15px;
+    
+
+}
+
+.shop-section{
+    display: flex;/*phle sabhi box full screen area cover kar rhe the ab box ke term me rhege*/
+    flex-wrap:wrap;/*agar ek bhut sara box ek hi row me aa rha hai to ,different line me lane ke liye 
+    flex-wrap ka use karte hai means n/2 me divide ho jayega*/
+    height:100px;
+    justify-content: space-evenly;/*boxes ke beech charo taraf space chahiye to */
+    background-color: #e2e7e6;
+    
+   
+}
+
+.box-img{
+    height:300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content{
+    /* margin-left:10px;
+    margin-right:10px; */
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+.box-content p{
+    color:#007185;
+}
+/* footer */
+footer{
+    margin-top:15px;
+}
+
+.foot-panel{
+    background-color: #374753;
+    color:white;/*text color:white*/
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.85rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color:white;
+    height:300px;
+    /* jab bhi row me chahiye to parent container ko display:flex kar dege */
+    display:flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top:20px;
+}
+
+ul a{/*unorderd list ke ancher tag ko dispaly box kra chahte hai*/
+    display: block;
+    font-size: 0.85rem;
+    margin-top:10px;
+    color:#dddddd;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,122 @@
+/* Q1 */
+/* #box{
+    background-color: blueviolet;
+    color : white;
+} */
+/* Q2 */
+/* (.class_name{ }) */
+/* .heading{
+    color: red;
+} */
+
+/* Q3 */
+/* button {
+    background-color: green;
+} */
+
+/* <!-- practice 2---###########################################################################--> */
+/* Q1 */
+/* for id*/
+/* #one{ 
+    text-align:center;
+    text-transform:capitalize;
+}
+
+h1{
+    text-align:center;
+    text-transform:capitalize;
+    
+} */
+/* Q2 */
+/* p{
+    font-family:Times New Roman;
+}
+h1{
+    font-family: Times New Roman;
+} */
+/* Q3 */
+/*Agar ham outer id ka size increase krege to By Default inner ka bhi apne app same px ka 
+    set ho jata hai we can say parent-child properties means parent pe apply krege to child per bhi apply ho jayega*/
+/* #outer{
+    font-size: 25px; 
+}
+#inner{
+    font-size:15px;
+} */
+
+/* <!-- practice set -> 3$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  --> */
+/* Q2 */
+/* *{ The * selector can also select all elements inside another element  */
+    /*kisi bhi bade project se pahle padding&margin ko '0' karne se programmer ko aasani rhti hai */
+    /* padding:0; 
+    margin:0; 
+    color:white; */
+       /*and create Blank surface to Design the projects esaily*/ 
+                                                    /*{
+
+                                                        css declarations;
+                                                    } */
+/* } */
+
+/* #NavBar{
+    height:60px;
+    background-color:#0f1111;
+    
+}
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    color:#f08804;
+    font-size: 25px;
+} */
+
+/* ancher tags ke bhich me space dene ke liye below syntax ka use kar rhe hai */
+/* a{ 
+    margin-right: 150px;
+} */
+
+/* <!-- practice set->4 ____________----------------------_____________----------------- --> */
+/* Q1 */
+
+#NavBar{
+    height:60px;
+    background-color:#0f1111;
+    
+    
+}
+button{
+    background-color: #f08804;
+    
+}
+
+#logo{
+    color:#f08804;
+    font-size: 25px;
+    
+} 
+
+
+a{ 
+    margin-right: 150px;
+    color:white;
+    text-decoration: none;
+} 
+
+.contentBox{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    display:inline-block;
+}
+
+#content{
+    height:500px;
+
+}
+footer{
+    background-color: #0f1111;
+    color:white;
+    text-align:center;
+}

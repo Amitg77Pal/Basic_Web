@@ -1,0 +1,153 @@
+/* .contentBOx{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+} */
+
+/* #NavBar{
+    height:60px;
+    background-color:#0f1111;
+    
+    
+}
+button{
+    background-color: #f08804;
+    
+}
+
+#logo{
+    color:#f08804;
+    font-size: 25px;
+    
+} 
+
+
+a{ 
+    margin-right: 150px;
+    color:white;
+    text-decoration: none;
+} 
+
+.contentBox{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    display:inline-block;
+}
+
+#content{
+    height:500px;
+
+}
+footer{
+    background-color: #0f1111;
+    color:white;
+    text-align:center
+    
+} */
+
+/* <!-- practice set 6--1234567890-09876543211> */
+
+/* Qs-1 theory---------------*/
+
+/* div{
+    background-color:pink;
+    display:flex; /*eska matlab sare ke sare elements containe ke under aa gye hai*/
+    /* display:flex;-->by default flex ki direction "row"(row-->main axis with direction-->left to right)  
+    hoti hai */
+    /* justify-content main axis ke along placed karne ke liye hota hai */
+    /* justify-content:center; means elements center me shift ho jayege *
+    justify-content:space-evenly; /*elements ke bheech space equally distibute hoga*
+}
+a{
+    text-transform: none; /*The text-transform CSS property specifies how to capitalize an element's text.*
+    text-decoration: none; /*means jo bhi kuchh decorate hoga un sabhi ko hata dega
+    /* Here are some examples of text-decoration styles:
+double: A pair of solid lines
+dotted: A dotted line
+dashed: A dashed line
+wavy: A wavy line *
+color:black;
+background-color: aqua;
+}
+li{
+    list-style-type: none;/*elements ke aage jo bhi notation hoga o hat jayega(like->1,2,3||a,b,c||...(Dot) so on)*
+    display:inline;
+} */
+/* Qs-1 soution----------------*/
+/* .navbar{
+    background-color: pink;
+    display:flex;
+    /* justify-content: center; *
+    justify-content: space-evenly;
+}
+/* Dona same hai .navebar(.class) or ul */
+/* ul{
+    background-color: pink;
+    display:flex;
+} *
+a{
+    text-decoration: none;
+    color:red;
+}
+li{
+    list-style-type: none;
+    /* background-color: aqua; *
+    background-color: white;
+} */
+
+/* Q2 */
+/* .outer{/*  outer vala hi container hota hai *
+    height:400px;
+    width:400px;
+    background-color:darkcyan;
+    display:flex;
+    justify-content:center;/* justify-content:use for main axis(Left to Right) *
+    align-items:center; /*align-items: use for cross axis(top to bottom) *
+
+}
+.inner{
+    height:200px;
+    width:200px;
+    background-color:blueviolet;
+
+} */
+
+/* <!-- practice set:8 (((((((((((((((((((88888888888)))))))))))))))))))--> */
+
+/* step1:-create a div with circular shape & a thick border from one end(top/bottom/left/right) */
+/* .loader{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    /* border:10px solid black;charo taraf se border apply hogar *
+    border-top:10px solid black;/*border top se apply hoga(border-top,bottom,left,right)*
+} */
+
+/* ease-in - specifies a transition effect with a slow start. ease-out - specifies a transition effect with a slow
+ end. ease-in-out - specifies a transition effect with a slow start and end. */
+
+.loader{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:20px solid #BF8875;
+    border-top:10px solid black;
+    animation:spinAnimate 3s ease-in 0s infinite normal;/*bina ruke simpely rotate karta rhega*/
+    animation:spinAnimate 3s steps(5) 0s infinite normal; /*showing like loading(slow internet) and complete once cycle in 
+    5 steps*/
+    animation:spinAnimate 3s ease-in-out 0s infinite normal;/*to increase the speed of loader ,we have to change in 
+    duration-time*/
+}
+
+/* step2:-To make it spin create an animation which transforms it from 0deg to 360deg */
+@keyframes spinAnimate{ /*keyframe is a templete not a animation*/
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+

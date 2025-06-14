@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border:border-box;/*border-box means jeetni bhi padding( Padding is the space between the border and the content)
+     element ko mile means jitna bhi border-size element ko (jeetni hamne height and width set ki hai usi ke ander 
+      border area count ho)
+     mile oo size uski height and width ke under count hogi|| agar simple border ki bat kre to kisi bhi element ke
+      bahar vale area me count hota hai*/
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+}
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size:cover;/*The cover value, as the name implies, ensures that the picture is scaled to fill the 
+    full container, leaving no empty space, while maintaining its ratio*/
+    height:50px;
+    width:100%;
+}
+
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:2px solid white;
+}

@@ -1,0 +1,63 @@
+div{
+    height: 100px;
+    background-color: palevioletred;
+    width:200px;
+    /* border-width:2px;
+    border-style:solid;
+    border-color:blue */
+    border:2px solid blue;
+}
+h1{
+    height: 100px;
+    background-color: aquamarine;
+    width:200px; 
+    /* border-width:3px ;
+    border-style: dashed;
+    border-color: black; */
+    border:3px dashed black;
+    text-align: center; /* here,Heading apne box ke center me gyi hai na hi ki page ke center me (width=200px)*/
+    
+}
+/* Border Radius *-------------/
+/* div{
+    height: 100px;
+    background-color: palevioletred;
+    width:200px;
+    border:2px solid blue;
+    border-radius:10px;
+} */
+/*if height && width re same then that is square aur Agar border-radius ko 50% 
+    set kar de to Circle ban jayega*/
+
+/* Circle*/
+    /* div{
+        height: 100px;
+        width:100px;
+        background-color: palevioletred;
+        border:2px solid blue;
+        border-radius:50%;
+    } */
+
+    /* div{
+        height: 100px;
+        background-color: palevioletred;
+        width:100px;
+        border:2px solid blue;
+        border-radius:10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    } */
+
+    div{
+        height: 100px;
+        width:100px;
+        background-color: pink;
+        border:2px solid blue;
+        /*padding:25px;*/  /*charo Direction(top,Right,Buttom,Left) me same 25px hoga*/
+        padding:1px 2px 3px 4px;
+        /* margin-top: 50px; */
+        /* margin-bottom: 50px; */
+        margin:30px 50px 60px 70px;
+    }
+
+    

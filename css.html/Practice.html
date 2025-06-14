@@ -1,0 +1,138 @@
+<!-- CSS me jo cheejh bad me aati hai uski priority jyada hoti hai  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_set</title>
+    <link rel="stylesheet" href="Practice.css">
+    <!-- applicable for practice set 1 and 2 only -->
+    <!-- <style>
+        
+        button{
+            background-color: blue;
+        }  
+    </style> -->
+</head>
+<body>
+    <!-- Q1-create a simple div with an id "box".
+Add some text content inside the div.
+Set its background color to blue.-->
+
+<!-- #box+enter -->
+<!-- <div id="box">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, quod.
+    </div>
+    <!- (.myclass+enter) ->
+    <div class="myclass"></div>
+    <!- #myid+enter ->
+    <div id="myid"></div>
+     -->
+    <!-- concept -> ham ek time per multiple selector use kar skte hai 
+    means kisi bhi selector ke help se koi work kar skte hai agar us selector ke help se o kam ho ja rha hai to 
+    selector(universal,element,id,class) -->
+    
+    
+    <!-- Q2-create 3 heading with h1,h2& h3 Give them all a class "heading"&set color of "heading" to red. -->
+    <!-- <h1 class="heading">my naame is amit </h1>
+    <h2 class="heading">my naame is amit</h2>
+    <h3 class="heading">my naame is amit</h3> -->
+    
+    <!-- Q3 -> Create a button & set its backgroung color to:
+    Green using css stylesheet
+    Blue using <style>tag
+    pink using inline style.-->
+    
+    <!-- <button>Click me!</button> -->
+    
+    <!-- <button style="background-color: pink;">Click me!</button> -->
+    
+    <!-- concept -> 1st -> jo bhi chijh elements ke sath likhi jaye uski priority sabse pahle hoti hai.
+     <button style="background-color: pink;">Click me!</button>
+    2nd -><link rel="stylesheet" href="Practice.css">
+        <style>
+            button{
+                background-color: blue;
+            }
+        </style>
+        here, priority style Buttonn ki hai.
+        
+        agar style button pahle aa jaye <link rel="stylesheet" href="Practice.css"> se to 
+        prority  <link rel="stylesheet" href="Practice.css"> ki hogi . -->
+    
+        <!-- practice set -> 2---###########################################################################-->
+    
+    <!-- Q1-> create a heading centered on the page with all of its text capitalized by default. -->
+    <!-- two ways to represent the same things -->
+
+    <!-- <h1 id="one">amit kumar </h1>
+    <h1>amit kumar </h1> -->
+    
+    <!-- Q2-> Set the font family to all the content in document to "Times New Roman". -->
+    
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, obcaecati.</p>
+    
+    <h1>Amit Kumar </h1> -->
+    
+    <!-- Q3-> create one div inside another div.
+        set id&text "outer" for the first one & "inner" for the second one.
+        set the outer div size to 25px &inner div text size to 10px. -->
+        <!-- <div id="outer" style="border:1px solid green; background-color: yellowgreen;">
+            outer
+            <div id="inner">inner</div>
+        </div> -->
+
+    <!-- practice set -> 3 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+        <!-- Q2 -> Create the following navbor -->
+
+        <!-- <div id="NavBar"> -->
+            <!-- <a id="logo">amazon.in</a>
+            <a href="xyz">Account</a>
+            <a href="xyz">My Cart</a>
+            <a href="xyz">Contact Us</a> -->
+            <!-- Agar div ke andar dusra div Create karege to -> jo bhi ham kuchh dusre vala div me likege to o 
+                next line me chla jayega.  -->
+            <!-- <div>  
+                <input placeholder="search Amazon.in">
+                <button>Search</button>
+            </div> -->
+            <!-- <input placeholder="search Amazon.in">
+            <button>Search</button> -->
+            
+        <!-- </div> -->
+
+    <!-- practice set->4 ____________----------------------_____________----------------- -->
+    <!-- Q1->create a webpage layout with a header , a footer &a content area containing 3 divs.
+    set the height & width of divs to 100px.
+    (add the previous navbar in the header) -->
+    <!-- Q2->Add borders to all the divs.
+    Q3->Add a different background color to each div with an opacity of 0.5
+    Q4->Give the content area an appropriate height. -->
+
+    <header>
+        <div id="NavBar">
+            <a id="logo">Amazon.in</a>
+            <a href="xyz">Account</a>
+            <a href="xyz">My Cart</a>
+            <a href="xyz">Contact Us</a>
+            <input placeholder="search Amazon.in">
+            <button>click</button>
+        </div>
+    </header>
+    
+    <div id="content">
+        <div class="contentBox" style="background-color: rgba(255,0,0,0.5);">Don ko pakdna mumkin nhi</div>
+        <div class="contentBox" style="background-color: rgba(0,255,0,0.5);">My name is Amit Pal </div>
+        <div class="contentBox" style="background-color: rgba(0,0,255,0.5);">The human Lion</div>
+    </div>
+    
+    <footer>
+        Made with &hearts;by Amazon<br>
+        &#169; 1996-2023,Amazon.com,inc. or its affiliates
+    </footer>
+
+    
+    
+</body>
+</html>
+

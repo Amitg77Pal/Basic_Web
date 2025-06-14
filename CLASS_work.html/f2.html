@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Catalog</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="cover1.jpg" alt="Book Cover"></td>
+                <td>Book Title 1</td>
+                <td>Author Name 1</td>
+                <td>Publisher 1</td>
+                <td>$19.99</td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td><img src="cover2.jpg" alt="Book Cover"></td>
+                <td>Book Title 2</td>
+                <td>Author Name 2</td>
+                <td>Publisher 2</td>
+                <td>$24.99</td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <!-- Add more rows for additional books -->
+        </tbody>
+    </table>
+</body>
+</html>

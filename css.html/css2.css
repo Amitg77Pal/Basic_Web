@@ -1,0 +1,116 @@
+/* sara ka sara statement blue color ka hojayega */
+/* * {
+
+    color : blue;
+} */
+/* jo bad me likha rhata hai uski jayada priority  rhti hai */
+/* jitne bhi h1 hoge un sabhi per apply hoga Green color */
+
+/* h1{
+    color:green; 
+}
+p{
+    color:aquamarine;
+}
+button{
+    color:brown;
+} */
+/* jiska id="headingOne" hogo wo yellow color ka hojayega */
+/* #headingOne{
+    color :yellow;
+} */
+
+/* jaha-jaha class-name same rhega vaha-vaha-same color hoga */
+/* .myClass{
+    color:blueviolet;
+} */
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* text-align properties  */
+/* koi bhi paragraph left(left Align) se hi suru hota hai -> like we are write anything in notebook  */
+
+/* h1{
+    text-align:center;
+    text-decoration : underline;
+    text-decoration: overline;
+    text-decoration: blue line-through;
+    text-decoration: blue wavy line-through;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration 
+
+} */
+
+/* p{
+    text-align:right;
+}
+p{
+    text-align:left;
+}
+
+p{
+    text-align:center;
+} */
+
+/* New CSS features-> start denotes left && end denotes right */
+p{
+    text-align:end;
+}
+
+p{
+    text-align:start;
+}
+
+a{
+    text-decoration: none; /* By default link ke niche underline rhta hai to usko hatane ke line "none" likhte hai
+    (Agar ham chahe to underline,overline,line-through set kar sakte hai Link per) */
+}
+
+#h1{
+    font-weight:lighter;
+}
+#h2{
+    font-weight:bold; /*headings are bolds by default*/
+
+}
+#h3{
+    font-weight:bold;
+}
+
+#h1{
+    font-weight:100;
+}
+#h2{
+    font-weight:250; /*headings are bolds by default*/
+
+}
+#h3{
+    font-weight:900;
+}
+/* font-family-------- */
+#one{
+    font-family:arial;
+}
+
+#two{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* agar 'Segoe UI' apply nhi hota hai to Tahoma apply kar do , 
+    aur agar Tahoma bhi apply nhi hota hai to Geneva apply kar do */
+}
+/* Unit in CSS----------- */
+#one1{
+font-size: 25px; /*hsm paragraph ke size ko increade or decrease kar skte hai with the of picxals*/
+}
+
+#two1{
+    font-size: 34px;
+    }
+
+/* line height------------ */
+#one2{
+    font-size:20px; /*ye size batata hai means text-Letters bada hoga ya chota hoga ye dicide krta hai*/
+    line-height:15px; /*ye ek line se dusre line ke bich ka distance btata hai*/
+    line-height:normal;/*koi change nhi hoga text me jaisa pahle jaisa likhege Vaisa hi rhega*/
+    text-transform:lowercase;
+    text-transform: uppercase;/*sara ka sara letters upper case me hoga*/
+    text-transform: capitalize;/*sare word ka first letter Captalise hoga*/
+}
+

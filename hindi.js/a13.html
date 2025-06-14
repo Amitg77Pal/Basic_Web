@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Example</title>
+<style>
+  #canvas-container {
+    border: 1px solid black;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+  }
+</style>
+</head>
+<body>
+<div id="canvas-container">
+  <canvas id="myCanvas" width="200" height="200"></canvas>
+</div>
+
+<script>
+  // Get canvas element and its context
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+
+  // Draw a red square on the left side
+  ctx.fillStyle = 'red';
+  ctx.fillRect(10, 10, 50, 50);
+
+  // Draw a blue circle with text in the top right corner
+  ctx.beginPath();
+  ctx.arc(canvas.width / 2, 70, 50, 0, 2 * Math.PI);
+  ctx.fillStyle = 'blue';
+  ctx.fill();
+
+  // Draw text next to the blue circle
+  ctx.fillStyle = 'black';
+  ctx.font = '14px Arial';
+  ctx.textAlign = 'center';
+  ctx.fillText('Hello, Canvas!', canvas.width / 2, 125);
+
+  // Draw a green rectangle in the bottom left corner, inclined
+  ctx.fillStyle = 'green';
+  ctx.save(); // Save the current state of the canvas
+  ctx.translate(0, canvas.height); // Move the origin to the bottom left corner
+  ctx.rotate(-Math.PI / 4); // Rotate the canvas by -45 degrees (clockwise)
+  ctx.fillRect(10, -60, 100, 30);
+  ctx.restore(); // Restore the saved state of the canvas
+</script>
+</body>
+</html>

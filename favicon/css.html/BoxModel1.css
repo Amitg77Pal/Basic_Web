@@ -1,0 +1,455 @@
+/* <!-- Display property((((((((((((((((---------)))))))))))))))) 2:39:59--> */
+/* div{
+    background-color: pink;
+
+} */
+
+/* div h1 are the examples of the Block element && span,input,button,ancher tags are the examples of 
+inline elements */
+
+/*Agar display :inline ko hta de to "div" puri line dega means first line pink ho jayegi 
+    or button tusari line me print hoga */
+/* div{
+    background-color: pink;
+    display:inline; 
+} */
+
+ /* Here Button full space lega to next line me print ho jayega */
+/* button{
+    display:block;
+} */
+/* 2222222222222222222222222222 */
+/* div{ */
+    /* width:100px;
+    height:100px;
+    margin:25px;
+    padding:25px; */
+    /* display:inline;  */
+    /*Agar display:inline nhi likhege to Square box me yek dusre ke nhiche sare box aa jayege  */
+    /* Agar Box page ke top ko toughkar rhi hai to margin kevel Left&Right se set hogi Top &Bottom se nhi  */
+    /* display:inline-block; */
+    /* Ab margin Left&Right ke sath sath top&bottom per bhi set kar pa rhe hai */
+/* } */
+
+/* none karne per box2 Delete ho gya aur box2 ka place box3 cover kar liya aur space free ho jayega. */
+/* #box2{
+    
+    display:none;
+    visibility:hidden;
+} */
+
+/* <!-- RGBA Channels for coloring &&&&&&&&&&&&&&&&&&&&&****************************_________--> */
+/* div{
+    width:100px;
+    height:100px;
+    margin:25px;
+    padding:25px;
+    display:inline-block; 
+    background-color:rgba(255,0,0,0.5);
+}
+#box1{
+    background-color: rgba(255,0,0,0.5);
+}
+#box2{
+    background-color: rgba(0,0,255,0.75);
+}
+
+#box3{
+    background-color: rgba(0,0,255,1);
+} */
+
+
+/* <!-- unit in css #########################################################       3:04:00 --> */
+/* percentage->Parent-child Relation */
+/* #box1{
+    height:100px;
+    width:100px;
+    background-color: green;;
+}
+#box2{
+    height:50px;
+    width:50px;
+    background-color: aqua;
+    margin-left:10%;
+} */
+
+/* Em */
+
+/* #box1{
+    height:100px;
+    width:200px;
+    background-color: green;
+    font-size:10px;
+} */
+/*#box2{
+    width:30%;
+    background-color: aqua;
+    margin-left:10%;
+    font-size:2em; */
+    /* width:5em; */
+    /* width:5rem; */
+    /* height:50px; */
+    /* height:1vh;  */
+    /* browser(window) ki jitni height hogi box2 ki height window-Display ki 1% hogi */
+    /* width:50vw; */
+    /* browser(window) ki jitni width hogi box2 ki width window-Display ki 50% hogi */
+
+/* } */
+/* here, width:5em means font-size:2 em->2*5=10em child ka */
+/* 2em->2 times of Parent's font-size */
+
+/* Position using Static/relative/absolute/fixed ->(3:17:00)  _________-----------_____________------- */
+
+/* div{ level 4 se pahle tak yhi rhega
+    height:100px;
+    width:100px;
+    background-color: aqua;
+    border:2px solid black;
+    display :inline-block;
+    /* inline-block means agar koi bhi like boxes agar vertically hai to horigentally ho jayege *
+
+}  */
+/*no change in elements by default if we are use static */
+/* #box1{
+    position:static; 
+    top:50px;
+    bottom:50px;
+} */
+/* in realtive -----> */
+/*means top se 2opx nhiche ki aor shift ho jayega means bottom ki aur shift ho jayega */
+/* left:10px -> means right ki taraf 10px shift ho jayega 
+Rule -> Agar right hai to left shift hoga and its vice-versa and top hai to bottom shift hoga and its vive-vers */
+/* #box2{
+    position: relative;
+    top:20px;
+    left:10px; 
+} */
+ /* Here,absolute me->apne parent ke hisab se shift hote hai top:10px means top se 10px shift bottom ki aur hota hai
+ (means box or particular thing khi per ho if top:10px means top-display se 10px shift kar jayega bottom me) and
+  same for bottom || left:10px means Display ke left se 10px shift hote hai and same for right */
+    /* here body ke respect me move(change) kar rha hai */
+/* #box3{
+    position :absolute;
+    /* here box4 box3 ke niche shift ho gya hai because of jaise hi position ko absolute rkha gya o document flow 
+    se hat gya aur ab uski position document tag(body) ke hisab se change ho rhi hai  
+    || left means Document ka left or right means Document ka right ||
+} */
+
+
+/* #box3{
+    position :absolute;
+    top:500px;
+    left:50px;
+} */
+
+
+/* #box4{ /* yek bar jha fix kar diya o chhijh vahi rhegi ->write right/left/top/bottom:0;
+    position:fixed;
+    right:10px;
+    /* bottom:0;->means ye hmesa bottom se sta rhega *
+    bottom:0px;
+    width:100%; /*pure Display ki width occupy kar li hai *
+} */
+/* Here,jab ham scroll karege to box3 bhi other text ke sath move karega but jab scrolling box3 se hokar jayegi
+  w to box3 bhi fixed ho jayega means only texts will moves. */
+/* #box3{
+    position :sticky;
+    top:100px;
+    left:50px;
+}
+
+#box4{
+    position:fixed;
+    top:0;
+    left:20px
+} */
+
+/* Z-index||z-inex(+ve) || z-index(-ve)->(3:33.00)_____________-------------------______________ */
+/* #box1{
+    position:static;
+}
+
+#box2{
+    position:relative;
+    top:10px;
+    left:10px;  /* z-index: 1; 
+    
+} */
+
+/* #box3{
+    position:absolute;
+    top: 500px;
+    left:250px;
+}
+
+#box4{
+    position:fixed;
+    top:50px;
+    /* z-index:2; 
+} */
+
+/* <!-- Set the BackGround pictures (3:39:00)____________________________--> */
+
+
+/* #box1{
+    background-image: url("cat_photo.jpg");
+    background-size:contain;
+} */
+/* #box1{
+    background-image: url("cat_photo.jpg");
+    background-size:cover;
+} */
+/* #box1{
+    background-image: url("cat_photo.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+} */
+
+
+/* body{
+    background-image: url("cat_photo.jpg");
+    background-size:cover;
+    
+
+}
+
+#box1{
+    background-image: url("cat_photo.jpg");
+    background-size:cover;
+} */
+
+/* body{
+    background-image: url("cat_photo.jpg");
+    background-size:contain;
+    
+
+}
+
+#box1{
+    background-image: url("cat_photo.jpg");
+    background-size:contain;
+} */
+
+/* body{
+    background-image: url("cat_photo.jpg");
+    background-size:cotain;
+    
+
+}
+
+#box1{
+    background-image: url("cat_photo.jpg");
+    background-size:contain;
+} */
+
+
+/* <!-- Level->4 FlexBox(3:56:30(coding part)) +++++++++++++++--> */
+
+body{
+    text-align: center;
+}
+
+/* div{ 
+    height:100px;
+    width:100px;
+
+    border:2px solid black;
+    display :inline-block;
+    /* inline-block means agar koi bhi like boxes agar vertically hai to horigentally ho jayege *
+
+}  */
+/* #container{
+    width:800px;
+    height:200px;
+    display:flex; /*elements(elements ke beech ka blank distance khatam ho jayega)aapas me  */
+    /*sat jayege aur by default elements & container left me shift ho jayege aur elements apne aap ko container me 
+    fix karne ke liye apna size adjust kar sakte hai*
+    flex-direction:row; /*sabse current vala update(run) hota hai *
+    flex-direction:row-reverse; 
+    flex-direction:column;
+    flex-direction:column-reverse;
+    justify-content: space-evenly;
+}
+#box1{
+    background-color:aqua;
+}
+#box2{
+    background-color:palegreen;
+}
+#box3{
+    background-color:blueviolet;
+}
+#box4{
+    background-color:yellowgreen;
+}
+#box5{
+    background-color:forestgreen;
+}
+ */
+
+/* div{ 
+    height:100px;
+    width:50px;
+
+    border:2px solid black;
+    display :inline-block;
+    /* inline-block means agar koi bhi like boxes agar vertically hai to horigentally ho jayege *
+
+}  */
+/* #container1{
+    width:800px;
+    height:200px;
+    display:flex; /*elements(elements ke beech ka blank distance khatam ho jayega)aapas me  */
+    /*sat jayege aur by default elements & container left me shift ho jayege aur elements apne aap ko container me 
+    fix karne ke liye apna size adjust kar sakte hai*
+    flex-direction:row; /*sabse current vala update(run) hota hai */
+    /* flex-direction:row-reverse; 
+    flex-direction:column;
+    flex-direction:column-reverse; *
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-evenly; /*elements container me equality distance per placed hoge*
+    justify-content: space-around; /*elements container me equal distance per placed hoge but container ke left or 
+    right vale part se first element ke distance ke 2*d distance per fix rhege*
+    justify-content: space-between; /*ek-ek element container ke left or right side me set hojayega aur baki ka 
+    element equally distance pe container me distrube rhega*
+} */
+
+/* div{ 
+    height:20px;
+    width:50px;
+
+    border:2px solid black;
+    display :inline-block;
+    /* inline-block means agar koi bhi like boxes agar vertically hai to horigentally ho jayege *
+
+} 
+#container1{
+    width:800px;
+    height:200px;
+    display:flex; 
+    flex-direction:column;
+    justify-content: flex-start; /*left side me top to bottom set hojayega *
+    justify-content: center;
+
+}
+#box1{
+    background-color:aqua;
+}
+#box2{
+    background-color:palegreen;
+}
+#box3{
+    background-color:blueviolet;
+}
+#box4{
+    background-color:yellowgreen;
+}
+#box5{
+    background-color:forestgreen;
+} */
+
+
+/* div{ 
+    height:50px;
+    width:150px;
+
+    border:2px solid black;
+    display :inline-block;
+    /* inline-block means agar koi bhi like boxes agar vertically hai to horigentally ho jayege *
+
+} 
+#container2{
+    width:600px;
+    height:600px;
+    display:flex; 
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;/*The flex-wrap property in CSS controls whether flex items are forced onto one line or 
+    can wrap onto multiple lines*/
+    /* align-items:center;*/ /*elements cross axis ke center se ja sakte hai(items center me align ho jayegi) *
+    align-items: flex-start;
+    align-items: flex-end;
+    align-content: /*flex-start;jab wrapping hoti hai to elements ke bewteen space aa jata hai to align-content 
+    ke help se elements ko ek jagah aur space ko ek taraf kar dege*
+
+}
+#box1{
+    background-color:aqua;
+}
+#box2{
+    background-color:palegreen;
+    height:200px;
+    
+}
+#box3{
+    background-color:blueviolet;
+    height:150px;
+}
+
+#box4{
+    background-color:yellowgreen;
+}
+#box5{
+    background-color:forestgreen;
+    height:200px;
+    align-self: flex-end;
+} */
+
+/* flex-properties(align-self,flex-grow,flex-shrink------------------ */
+
+div{ 
+    height:100px;
+    width:200px;
+
+    border:2px solid black;
+    display :inline-block;
+    /* inline-block means agar koi bhi like boxes agar vertically hai to horigentally ho jayege */
+
+} 
+#container2{
+    /* width:600px;/* used for shrink 
+    height:300px; */
+    width:700px;
+    height:300px;
+    display:flex; 
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+#box1{
+    background-color:aqua;
+    flex-grow:1;
+}
+#box2{
+    background-color:palegreen;
+    height:200px;
+    flex-shrink:2;
+     /*flex-shrink:2;-> karne se pahle sabhi boxes ka size "120*h" tha but abhi box2 ka size 
+    "64*204"(width of box2 is '64px->60+4') ho jya hai means pahle se approximately double amount se shrink kiya hai
+     as compare to other boxes.other boxes ka size increase ho kar ->"134*h" ho jya hai */
+     /*agar kisi elements ko jayade shrink karvana hai to flex-shrink:>=1 kar dege aur elements ko dhire shrink
+      karvana hai to flex-shrink:<1 kar dege*/
+
+    /* flex-shrink: 0; ham nhi chahte ki box2 shrink kare.to box ke size me border vala size bhi add ho 
+    jayega(here->left border:2px+right border:2px==4px)*/
+    flex-grow:2; /*jitna box1 ka jitna width ho ga usse box2 ka width 2 times hoga */
+    
+    
+}
+#box3{
+    background-color:blueviolet;
+    height:100px;
+    
+}
+
+#box4{
+    background-color:yellowgreen;
+    height:150px;
+
+}
+#box5{
+    background-color:forestgreen;
+    
+}
